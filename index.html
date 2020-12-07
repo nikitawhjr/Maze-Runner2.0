@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/matter.js"></script>
+    <script src="libraries/p5.play.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+    apiKey: "AIzaSyBOt7e6LWcH0wCvGrK0igz695jD6XtZLMU",
+    authDomain: "maze-runner-bb4ed.firebaseapp.com",
+    databaseURL: "https://maze-runner-bb4ed.firebaseio.com",
+    projectId: "maze-runner-bb4ed",
+    storageBucket: "maze-runner-bb4ed.appspot.com",
+    messagingSenderId: "247464803189",
+    appId: "1:247464803189:web:cc5d5e0888d06c04ddf13c"
+  };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!--Add Your JS files here -->
+    <script src="js/player.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <p> X: <span id="x-value"></span> </p> <p> Y: <span id="y-value"></span> </p> <script type="text/javascript"> window.addEventListener('mousemove',function(e){ document.getElementById('x-value').textContent=e.x; document.getElementById('y-value').textContent=e.y; }); </script>
+
+</body></html>
